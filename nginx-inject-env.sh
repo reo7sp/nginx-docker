@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 cd /
 rm -rf /etc/nginx-inj
