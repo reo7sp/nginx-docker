@@ -9,7 +9,6 @@ do
 	do
 		envname=${line%=*}
 		envvalue=${line#*=}
-		echo $envname "@" $envvalue
 		sed -i "s|\$ENV_$envname|$envvalue|g" $file
 	done
 	sed -i "s|/etc/nginx|/etc/nginx-inj|g" $file
