@@ -3,7 +3,7 @@
 cd /
 rm -rf /etc/nginx-inj
 cp -r /etc/nginx /etc/nginx-inj
-find /etc/nginx-inj -type f -print0 | while read -d $'\0' file
+find /etc/nginx-inj -type f | while read file
 do
 	printenv | while read line
 	do
