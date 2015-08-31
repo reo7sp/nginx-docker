@@ -5,7 +5,7 @@ rm -rf /etc/nginx-inj
 cp -r /etc/nginx /etc/nginx-inj
 find /etc/nginx-inj -type f | while read file
 do
-	printenv | while read line
+	printenv | tac | while read line
 	do
 		envname=${line%=*}
 		envvalue=${line#*=}
