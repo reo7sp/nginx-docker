@@ -14,4 +14,4 @@ do
 done
 
 cd /etc/nginx-inj
-nginx -c /etc/nginx-inj/nginx.conf -g "daemon off;"
+nginx -c /etc/nginx-inj/nginx.conf
